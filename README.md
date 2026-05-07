@@ -5,7 +5,9 @@ A web-based calculator for calculating nutrient amounts (Nitrogen, Phosphorus, P
 ## Features
 
 - Input weekly irrigation water amount in m³ per dunam
+- Input nutrient concentrations in ppm
 - Calculates N, P, K supplied to the field
+- Time period selector (weekly, daily, monthly)
 - Simple and user-friendly interface
 
 ## Installation
@@ -17,17 +19,23 @@ A web-based calculator for calculating nutrient amounts (Nitrogen, Phosphorus, P
 
 ## Usage
 
-1. Enter the weekly irrigation water amount in cubic meters per dunam
-2. Click "Calculate" to see the nutrient amounts
+1. Select the time period for irrigation water input
+2. Enter the irrigation water amount in cubic meters per dunam per selected period
+3. Enter the concentrations of nitrate, ammonium, phosphorus, and potassium in ppm
+4. Click "Calculate" to see the nutrient amounts supplied
 
-Note: The formulas used are placeholders. Please provide the actual formulas for accurate calculations.
+## Deployment
 
-## Build
+The project is set up with GitHub Actions for automatic deployment to GitHub Pages.
 
-Run `npm run build` to build the project for production.
+1. Create a public repository on GitHub
+2. Push this code to the main branch
+3. In repository settings, go to Pages and set source to "GitHub Actions"
+4. The site will be automatically deployed on each push to main
 
 ## Technologies
 
 - Vite
 - Vanilla JavaScript
 - HTML/CSS
+- GitHub Actions
